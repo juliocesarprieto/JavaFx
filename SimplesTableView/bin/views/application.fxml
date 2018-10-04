@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tbView" layoutX="7.0" layoutY="81.0" prefHeight="275.0" prefWidth="598.0" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+        <columns>
+          <TableColumn fx:id="tbColName" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="tbColLastName" prefWidth="75.0" text="Last_Name" />
+            <TableColumn fx:id="tbColAge" prefWidth="75.0" text="Age" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField fx:id="txtName" layoutX="23.0" layoutY="41.0" />
+      <TextField fx:id="txtLastName" layoutX="178.0" layoutY="41.0" />
+      <TextField fx:id="txtAge" layoutX="334.0" layoutY="41.0" prefHeight="25.0" prefWidth="42.0" />
+      <Label layoutX="23.0" layoutY="19.0" text="Name:" />
+      <Label layoutX="178.0" layoutY="19.0" text="Last Name:" />
+      <Label layoutX="336.0" layoutY="19.0" text="Age:" />
+      <Button fx:id="btnAdd" layoutX="395.0" layoutY="41.0" mnemonicParsing="false" onAction="#actionBtnAdd" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #28a745;" text="Add" textFill="WHITE" />
+      <Button fx:id="btnEdit" disable="true" layoutX="220.0" layoutY="369.0" mnemonicParsing="false" onAction="#actionBtnEdit" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #007bff;" text="Edit" textFill="WHITE" />
+      <Button fx:id="btnRemove" disable="true" layoutX="296.0" layoutY="369.0" mnemonicParsing="false" onAction="#actionBtnRemove" prefHeight="25.0" prefWidth="59.0" style="-fx-background-color: #dc3545;" text="Remove" textFill="WHITE" />
+   </children>
+</AnchorPane>
