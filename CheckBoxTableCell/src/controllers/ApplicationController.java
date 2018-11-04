@@ -86,6 +86,8 @@ public class ApplicationController implements Initializable {
 			if(ckBoxAll.isSelected()) {
 				tbView.getItems().clear();
 				ckBoxAll.setSelected(false);
+				btnRemove.setDisable(true);
+				btnEdit.setDisable(true);
 			}
 			else {
 				int total =tbView.getItems().size();
